@@ -1,0 +1,158 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* General Styles */
+body {
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background-color: #0a2e57;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Styles */
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #054483;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Main Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Article Styles */
+article {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+    position: relative;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Adjust header logo size for smaller screens */
+    .logo {
+        width: 60px;
+    }
+
+    /* Adjust navigation links padding for smaller screens */
+    nav a {
+        padding: 10px 15px;
+    }
+
+    /* Adjust footer logo size for smaller screens */
+    .foot img {
+        width: 100px;
+    }
+
+    /* Adjust footer school name font size for smaller screens */
+    .school-name p {
+        font-size: 18px;
+    }
+
+    /* Adjust footer double text font size for smaller screens */
+    .double p {
+        font-size: 18px;
+    }
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 650px;
+}
+
+.slides img {
+    position: relative;
+    object-fit: fill;
+    margin: 0 auto;
+}
+
+.circle-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.circle-button {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+.circle-button.active::after {
+    background-color: #0267ff;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    content: ' ';
+}

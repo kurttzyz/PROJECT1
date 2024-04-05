@@ -1,0 +1,41 @@
+body {
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: #e9dddd;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+nav {
+    background-color: #0a2e57;
+    color: #fff7f7;
+    padding: 1em;
+    display: flex;
+    justify-content:center ;
+}
+
+.drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    margin-top:20%;
+}
+.msu{
+    height:80px;
+}
+.nav-container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.content h1,h3{
+    text-align: center;
+    margin-top:5px;
+}
